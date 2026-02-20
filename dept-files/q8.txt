@@ -1,0 +1,50 @@
+┌────────────────────────────┬────────────────────────────┐
+│          Region1           │          Region2           │
+├────────────────────────────┼────────────────────────────┤
+│ Auvergne-Rhône-Alpes       │ Bourgogne-Franche-Comté    │
+│ Auvergne-Rhône-Alpes       │ Centre-Val de Loire        │
+│ Auvergne-Rhône-Alpes       │ Nouvelle-Aquitaine         │
+│ Auvergne-Rhône-Alpes       │ Occitanie                  │
+│ Auvergne-Rhône-Alpes       │ Provence-Alpes-Côte d'Azur │
+│ Bourgogne-Franche-Comté    │ Auvergne-Rhône-Alpes       │
+│ Bourgogne-Franche-Comté    │ Centre-Val de Loire        │
+│ Bourgogne-Franche-Comté    │ Grand Est                  │
+│ Bourgogne-Franche-Comté    │ Ile-de-France              │
+│ Bretagne                   │ Normandie                  │
+│ Bretagne                   │ Pays de la Loire           │
+│ Centre-Val de Loire        │ Auvergne-Rhône-Alpes       │
+│ Centre-Val de Loire        │ Bourgogne-Franche-Comté    │
+│ Centre-Val de Loire        │ Ile-de-France              │
+│ Centre-Val de Loire        │ Nouvelle-Aquitaine         │
+│ Centre-Val de Loire        │ Normandie                  │
+│ Centre-Val de Loire        │ Pays de la Loire           │
+│ Grand Est                  │ Bourgogne-Franche-Comté    │
+│ Grand Est                  │ Hauts-de-France            │
+│ Grand Est                  │ Ile-de-France              │
+│ Hauts-de-France            │ Grand Est                  │
+│ Hauts-de-France            │ Ile-de-France              │
+│ Hauts-de-France            │ Normandie                  │
+│ Ile-de-France              │ Bourgogne-Franche-Comté    │
+│ Ile-de-France              │ Centre-Val de Loire        │
+│ Ile-de-France              │ Grand Est                  │
+│ Ile-de-France              │ Hauts-de-France            │
+│ Ile-de-France              │ Normandie                  │
+│ Nouvelle-Aquitaine         │ Auvergne-Rhône-Alpes       │
+│ Nouvelle-Aquitaine         │ Centre-Val de Loire        │
+│ Nouvelle-Aquitaine         │ Occitanie                  │
+│ Nouvelle-Aquitaine         │ Pays de la Loire           │
+│ Normandie                  │ Bretagne                   │
+│ Normandie                  │ Centre-Val de Loire        │
+│ Normandie                  │ Hauts-de-France            │
+│ Normandie                  │ Ile-de-France              │
+│ Normandie                  │ Pays de la Loire           │
+│ Occitanie                  │ Auvergne-Rhône-Alpes       │
+│ Occitanie                  │ Nouvelle-Aquitaine         │
+│ Occitanie                  │ Provence-Alpes-Côte d'Azur │
+│ Provence-Alpes-Côte d'Azur │ Auvergne-Rhône-Alpes       │
+│ Provence-Alpes-Côte d'Azur │ Occitanie                  │
+│ Pays de la Loire           │ Bretagne                   │
+│ Pays de la Loire           │ Centre-Val de Loire        │
+│ Pays de la Loire           │ Nouvelle-Aquitaine         │
+│ Pays de la Loire           │ Normandie                  │
+└────────────────────────────┴────────────────────────────┘
