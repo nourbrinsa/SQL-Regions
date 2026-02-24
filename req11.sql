@@ -64,3 +64,4 @@ FROM
     communes_prefectures
 ORDER BY
     categorie DESC;
+    

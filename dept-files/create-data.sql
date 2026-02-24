@@ -33,7 +33,7 @@ create table zus (
 	departement varchar(60),
 	commune varchar(60),
 	quartier varchar(60),
-	primary key(commune,quartier),
+	primary key(departement,commune,quartier),
 	foreign key (departement) references departements(nom)
 );
 

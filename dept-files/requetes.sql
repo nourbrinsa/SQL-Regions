@@ -56,19 +56,36 @@ left join voisinsSymNoms v on v.Region1 = r.nom
 group by r.nom
 order by nb_voisins desc;
 
+--q9
+--Critiques:
+--Il y'a des champs multi‑valeurs dans une cellule : une “commune” peut contenir plusieurs communes (séparées par virgules, “et”, tirets, parenthèses, arrondissements…) et ça viole la 1ere forme normale (valeurs atomiques) et complique les jointures.
+
+--q10
+
+select departement,commune,quartier 
+from zus 
+where commune LIKE '%(%)';
+--Ce choix de stockage mélange deux informations différentes dans un même champ (commune + code département)
+--donc ce n'est plus atomique. ça peut rendre les jointures difficiles. Je trouve mieux de séparer les 2 attributs, une colonne pour le nom de la commune et une autre pour son code_departement. 
+
 --q11
 drop view if exists zus_pref; 
 create view zus_pref as 
 	select departement,commune,quartier 
 	from zus,departements 
-	where departement = nom and commune like '%'||prefecture||'%'; 
+	where commune = prefecture  
+	or commune like prefecture || ' %'
+	or commune like prefecture || ',%'
+	or commune like '%, ' || prefecture
+	or commune like '%,  ' || prefecture
+	or commune like '%-' || prefecture; 
 select * from zus_pref;
 
 --q11 bis
 select count(*) as nb,'Total' as type
 from zus
 UNION ALL
-select coun(*) as nb, 'Oui' as type
+select count(*) as nb, 'Oui' as type
 from zus_pref
 UNION ALL
 select count(*) as nb, 'Non' as type
@@ -76,7 +93,7 @@ from zus
 where (departement,commune,quartier) not in (select departement,commune,quartier from zus_pref);
 
 --q12
-select d.code, d.nom as departement, r.nom as region, COUNT(z.quartier) as nb_zus
+select d.code, d.nom as departement, r.nom as region, count(z.quartier) as nb_zus
 from departements d
 join regions r on r.rid = d.rid
 left join zus z on z.departement = d.nom
@@ -109,5 +126,5 @@ from regions r
 join departements d on d.rid = r.rid
 left join zus z on z.departement = d.nom
 group by r.rid, r.nom
-having COUNT(DISTINCT d.code)
-     = COUNT(DISTINCT CASE WHEN z.quartier IS NOT NULL THEN d.code END);
+having count(DISTINCT d.code)
+     = count(DISTINCT CASE WHEN z.quartier IS NOT NULL THEN d.code END);
