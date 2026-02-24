@@ -1,0 +1,1030 @@
+┌──────┬──────┐
+│ code │ nom  │
+├──────┼──────┤
+│ 18   │ Cher │
+└──────┴──────┘
+┌──────┬─────────────────────────┬──────────────────────┬────────────────────────────┐
+│ code │           nom           │      prefecture      │            nom             │
+├──────┼─────────────────────────┼──────────────────────┼────────────────────────────┤
+│ 1    │ Ain                     │ Bourg-en-Bresse      │ Auvergne-Rhône-Alpes       │
+│ 2    │ Aisne                   │ Laon                 │ Hauts-de-France            │
+│ 3    │ Allier                  │ Moulins              │ Auvergne-Rhône-Alpes       │
+│ 4    │ Alpes-de-Haute-Provence │ Digne-les-Bains      │ Provence-Alpes-Côte d'Azur │
+│ 5    │ Hautes-Alpes            │ Gap                  │ Provence-Alpes-Côte d'Azur │
+│ 6    │ Alpes-Maritimes         │ Nice                 │ Provence-Alpes-Côte d'Azur │
+│ 7    │ Ardèche                 │ Privas               │ Auvergne-Rhône-Alpes       │
+│ 8    │ Ardennes                │ Charleville-Mézières │ Grand Est                  │
+│ 9    │ Ariège                  │ Foix                 │ Occitanie                  │
+│ 10   │ Aube                    │ Troyes               │ Grand Est                  │
+│ 11   │ Aude                    │ Carcassonne          │ Occitanie                  │
+│ 12   │ Aveyron                 │ Rodez                │ Occitanie                  │
+│ 13   │ Bouches-du-Rhône        │ Marseille            │ Provence-Alpes-Côte d'Azur │
+│ 14   │ Calvados                │ Caen                 │ Normandie                  │
+│ 15   │ Cantal                  │ Aurillac             │ Auvergne-Rhône-Alpes       │
+│ 16   │ Charente                │ Angoulême            │ Nouvelle-Aquitaine         │
+│ 17   │ Charente-Maritime       │ La Rochelle          │ Nouvelle-Aquitaine         │
+│ 18   │ Cher                    │ Bourges              │ Centre-Val de Loire        │
+│ 19   │ Corrèze                 │ Tulle                │ Nouvelle-Aquitaine         │
+│ 21   │ Côte-d'Or               │ Dijon                │ Bourgogne-Franche-Comté    │
+│ 22   │ Côtes-d'Armor           │ Saint-Brieuc         │ Bretagne                   │
+│ 23   │ Creuse                  │ Guéret               │ Nouvelle-Aquitaine         │
+│ 24   │ Dordogne                │ Périgueux            │ Nouvelle-Aquitaine         │
+│ 25   │ Doubs                   │ Besançon             │ Bourgogne-Franche-Comté    │
+│ 26   │ Drôme                   │ Valence              │ Auvergne-Rhône-Alpes       │
+│ 27   │ Eure                    │ Évreux               │ Normandie                  │
+│ 28   │ Eure-et-Loir            │ Chartres             │ Centre-Val de Loire        │
+│ 29   │ Finistère               │ Quimper              │ Bretagne                   │
+│ 2A   │ Corse-du-Sud            │ Ajaccio              │ Corse                      │
+│ 2B   │ Haute-Corse             │ Bastia               │ Corse                      │
+│ 30   │ Gard                    │ Nîmes                │ Occitanie                  │
+│ 31   │ Haute-Garonne           │ Toulouse             │ Occitanie                  │
+│ 32   │ Gers                    │ Auch                 │ Occitanie                  │
+│ 33   │ Gironde                 │ Bordeaux             │ Nouvelle-Aquitaine         │
+│ 34   │ Hérault                 │ Montpellier          │ Occitanie                  │
+│ 35   │ Ille-et-Vilaine         │ Rennes               │ Bretagne                   │
+│ 36   │ Indre                   │ Châteauroux          │ Centre-Val de Loire        │
+│ 37   │ Indre-et-Loire          │ Tours                │ Centre-Val de Loire        │
+│ 38   │ Isère                   │ Grenoble             │ Auvergne-Rhône-Alpes       │
+│ 39   │ Jura                    │ Lons-le-Saunier      │ Bourgogne-Franche-Comté    │
+│ 40   │ Landes                  │ Mont-de-Marsan       │ Nouvelle-Aquitaine         │
+│ 41   │ Loir-et-Cher            │ Blois                │ Centre-Val de Loire        │
+│ 42   │ Loire                   │ Saint-Étienne        │ Auvergne-Rhône-Alpes       │
+│ 43   │ Haute-Loire             │ Le Puy-en-Velay      │ Auvergne-Rhône-Alpes       │
+│ 44   │ Loire-Atlantique        │ Nantes               │ Pays de la Loire           │
+│ 45   │ Loiret                  │ Orléans              │ Centre-Val de Loire        │
+│ 46   │ Lot                     │ Cahors               │ Occitanie                  │
+│ 47   │ Lot-et-Garonne          │ Agen                 │ Nouvelle-Aquitaine         │
+│ 48   │ Lozère                  │ Mende                │ Occitanie                  │
+│ 49   │ Maine-et-Loire          │ Angers               │ Pays de la Loire           │
+│ 50   │ Manche                  │ Saint-Lô             │ Normandie                  │
+│ 51   │ Marne                   │ Châlons-en-Champagne │ Grand Est                  │
+│ 52   │ Haute-Marne             │ Chaumont             │ Grand Est                  │
+│ 53   │ Mayenne                 │ Laval                │ Pays de la Loire           │
+│ 54   │ Meurthe-et-Moselle      │ Nancy                │ Grand Est                  │
+│ 55   │ Meuse                   │ Bar-le-Duc           │ Grand Est                  │
+│ 56   │ Morbihan                │ Vannes               │ Bretagne                   │
+│ 57   │ Moselle                 │ Metz                 │ Grand Est                  │
+│ 58   │ Nièvre                  │ Nevers               │ Bourgogne-Franche-Comté    │
+│ 59   │ Nord                    │ Lille                │ Hauts-de-France            │
+│ 60   │ Oise                    │ Beauvais             │ Hauts-de-France            │
+│ 61   │ Orne                    │ Alençon              │ Normandie                  │
+│ 62   │ Pas-de-Calais           │ Arras                │ Hauts-de-France            │
+│ 63   │ Puy-de-Dôme             │ Clermont-Ferrand     │ Auvergne-Rhône-Alpes       │
+│ 64   │ Pyrénées-Atlantiques    │ Pau                  │ Nouvelle-Aquitaine         │
+│ 65   │ Hautes-Pyrénées         │ Tarbes               │ Occitanie                  │
+│ 66   │ Pyrénées-Orientales     │ Perpignan            │ Occitanie                  │
+│ 67   │ Bas-Rhin                │ Strasbourg           │ Grand Est                  │
+│ 68   │ Haut-Rhin               │ Colmar               │ Grand Est                  │
+│ 69   │ Rhône                   │ Lyon                 │ Auvergne-Rhône-Alpes       │
+│ 70   │ Haute-Saône             │ Vesoul               │ Bourgogne-Franche-Comté    │
+│ 71   │ Saône-et-Loire          │ Mâcon                │ Bourgogne-Franche-Comté    │
+│ 72   │ Sarthe                  │ Le Mans              │ Pays de la Loire           │
+│ 73   │ Savoie                  │ Chambéry             │ Auvergne-Rhône-Alpes       │
+│ 74   │ Haute-Savoie            │ Annecy               │ Auvergne-Rhône-Alpes       │
+│ 75   │ Paris                   │ Paris                │ Ile-de-France              │
+│ 76   │ Seine-Maritime          │ Rouen                │ Normandie                  │
+│ 77   │ Seine-et-Marne          │ Melun                │ Ile-de-France              │
+│ 78   │ Yvelines                │ Versailles           │ Ile-de-France              │
+│ 79   │ Deux-Sèvres             │ Niort                │ Nouvelle-Aquitaine         │
+│ 80   │ Somme                   │ Amiens               │ Hauts-de-France            │
+│ 81   │ Tarn                    │ Albi                 │ Occitanie                  │
+│ 82   │ Tarn-et-Garonne         │ Montauban            │ Occitanie                  │
+│ 83   │ Var                     │ Toulon               │ Provence-Alpes-Côte d'Azur │
+│ 84   │ Vaucluse                │ Avignon              │ Provence-Alpes-Côte d'Azur │
+│ 85   │ Vendée                  │ La Roche-sur-Yon     │ Pays de la Loire           │
+│ 86   │ Vienne                  │ Poitiers             │ Nouvelle-Aquitaine         │
+│ 87   │ Haute-Vienne            │ Limoges              │ Nouvelle-Aquitaine         │
+│ 88   │ Vosges                  │ Épinal               │ Grand Est                  │
+│ 89   │ Yonne                   │ Auxerre              │ Bourgogne-Franche-Comté    │
+│ 90   │ Territoire de Belfort   │ Belfort              │ Bourgogne-Franche-Comté    │
+│ 91   │ Essonne                 │ Évry-Courcouronnes   │ Ile-de-France              │
+│ 92   │ Hauts-de-Seine          │ Nanterre             │ Ile-de-France              │
+│ 93   │ Seine-Saint-Denis       │ Bobigny              │ Ile-de-France              │
+│ 94   │ Val-de-Marne            │ Créteil              │ Ile-de-France              │
+│ 95   │ Val-d'Oise              │ Cergy-Pontoise       │ Ile-de-France              │
+│ 971  │ Guadeloupe              │ Basse-Terre          │ Guadeloupe                 │
+│ 972  │ Martinique              │ Fort-de-France       │ Martinique                 │
+│ 973  │ Guyane                  │ Cayenne              │ Guyane                     │
+│ 974  │ La Réunion              │ Saint-Denis          │ La Réunion                 │
+│ 976  │ Mayotte                 │ Mamoudzou            │ Mayotte                    │
+└──────┴─────────────────────────┴──────────────────────┴────────────────────────────┘
+┌────────────────────────────┬────────────────┬──────┬─────────────────────────┬──────────────────────┐
+│            nom             │    chefLieu    │ code │           nom           │      prefecture      │
+├────────────────────────────┼────────────────┼──────┼─────────────────────────┼──────────────────────┤
+│ Auvergne-Rhône-Alpes       │ Lyon           │ 1    │ Ain                     │ Bourg-en-Bresse      │
+│ Auvergne-Rhône-Alpes       │ Lyon           │ 3    │ Allier                  │ Moulins              │
+│ Auvergne-Rhône-Alpes       │ Lyon           │ 7    │ Ardèche                 │ Privas               │
+│ Auvergne-Rhône-Alpes       │ Lyon           │ 15   │ Cantal                  │ Aurillac             │
+│ Auvergne-Rhône-Alpes       │ Lyon           │ 26   │ Drôme                   │ Valence              │
+│ Auvergne-Rhône-Alpes       │ Lyon           │ 38   │ Isère                   │ Grenoble             │
+│ Auvergne-Rhône-Alpes       │ Lyon           │ 42   │ Loire                   │ Saint-Étienne        │
+│ Auvergne-Rhône-Alpes       │ Lyon           │ 43   │ Haute-Loire             │ Le Puy-en-Velay      │
+│ Auvergne-Rhône-Alpes       │ Lyon           │ 63   │ Puy-de-Dôme             │ Clermont-Ferrand     │
+│ Auvergne-Rhône-Alpes       │ Lyon           │ 69   │ Rhône                   │ Lyon                 │
+│ Auvergne-Rhône-Alpes       │ Lyon           │ 73   │ Savoie                  │ Chambéry             │
+│ Auvergne-Rhône-Alpes       │ Lyon           │ 74   │ Haute-Savoie            │ Annecy               │
+│ Bourgogne-Franche-Comté    │ Dijon          │ 21   │ Côte-d'Or               │ Dijon                │
+│ Bourgogne-Franche-Comté    │ Dijon          │ 25   │ Doubs                   │ Besançon             │
+│ Bourgogne-Franche-Comté    │ Dijon          │ 39   │ Jura                    │ Lons-le-Saunier      │
+│ Bourgogne-Franche-Comté    │ Dijon          │ 58   │ Nièvre                  │ Nevers               │
+│ Bourgogne-Franche-Comté    │ Dijon          │ 70   │ Haute-Saône             │ Vesoul               │
+│ Bourgogne-Franche-Comté    │ Dijon          │ 71   │ Saône-et-Loire          │ Mâcon                │
+│ Bourgogne-Franche-Comté    │ Dijon          │ 89   │ Yonne                   │ Auxerre              │
+│ Bourgogne-Franche-Comté    │ Dijon          │ 90   │ Territoire de Belfort   │ Belfort              │
+│ Bretagne                   │ Rennes         │ 22   │ Côtes-d'Armor           │ Saint-Brieuc         │
+│ Bretagne                   │ Rennes         │ 29   │ Finistère               │ Quimper              │
+│ Bretagne                   │ Rennes         │ 35   │ Ille-et-Vilaine         │ Rennes               │
+│ Bretagne                   │ Rennes         │ 56   │ Morbihan                │ Vannes               │
+│ Centre-Val de Loire        │ Orléans        │ 18   │ Cher                    │ Bourges              │
+│ Centre-Val de Loire        │ Orléans        │ 28   │ Eure-et-Loir            │ Chartres             │
+│ Centre-Val de Loire        │ Orléans        │ 36   │ Indre                   │ Châteauroux          │
+│ Centre-Val de Loire        │ Orléans        │ 37   │ Indre-et-Loire          │ Tours                │
+│ Centre-Val de Loire        │ Orléans        │ 41   │ Loir-et-Cher            │ Blois                │
+│ Centre-Val de Loire        │ Orléans        │ 45   │ Loiret                  │ Orléans              │
+│ Corse                      │ Ajaccio        │ 2A   │ Corse-du-Sud            │ Ajaccio              │
+│ Corse                      │ Ajaccio        │ 2B   │ Haute-Corse             │ Bastia               │
+│ Grand Est                  │ Strasbourg     │ 8    │ Ardennes                │ Charleville-Mézières │
+│ Grand Est                  │ Strasbourg     │ 10   │ Aube                    │ Troyes               │
+│ Grand Est                  │ Strasbourg     │ 51   │ Marne                   │ Châlons-en-Champagne │
+│ Grand Est                  │ Strasbourg     │ 52   │ Haute-Marne             │ Chaumont             │
+│ Grand Est                  │ Strasbourg     │ 54   │ Meurthe-et-Moselle      │ Nancy                │
+│ Grand Est                  │ Strasbourg     │ 55   │ Meuse                   │ Bar-le-Duc           │
+│ Grand Est                  │ Strasbourg     │ 57   │ Moselle                 │ Metz                 │
+│ Grand Est                  │ Strasbourg     │ 67   │ Bas-Rhin                │ Strasbourg           │
+│ Grand Est                  │ Strasbourg     │ 68   │ Haut-Rhin               │ Colmar               │
+│ Grand Est                  │ Strasbourg     │ 88   │ Vosges                  │ Épinal               │
+│ Guadeloupe                 │ Basse-Terre    │ 971  │ Guadeloupe              │ Basse-Terre          │
+│ Guyane                     │ Cayenne        │ 973  │ Guyane                  │ Cayenne              │
+│ Hauts-de-France            │ Lille          │ 2    │ Aisne                   │ Laon                 │
+│ Hauts-de-France            │ Lille          │ 59   │ Nord                    │ Lille                │
+│ Hauts-de-France            │ Lille          │ 60   │ Oise                    │ Beauvais             │
+│ Hauts-de-France            │ Lille          │ 62   │ Pas-de-Calais           │ Arras                │
+│ Hauts-de-France            │ Lille          │ 80   │ Somme                   │ Amiens               │
+│ Ile-de-France              │ Paris          │ 75   │ Paris                   │ Paris                │
+│ Ile-de-France              │ Paris          │ 77   │ Seine-et-Marne          │ Melun                │
+│ Ile-de-France              │ Paris          │ 78   │ Yvelines                │ Versailles           │
+│ Ile-de-France              │ Paris          │ 91   │ Essonne                 │ Évry-Courcouronnes   │
+│ Ile-de-France              │ Paris          │ 92   │ Hauts-de-Seine          │ Nanterre             │
+│ Ile-de-France              │ Paris          │ 93   │ Seine-Saint-Denis       │ Bobigny              │
+│ Ile-de-France              │ Paris          │ 94   │ Val-de-Marne            │ Créteil              │
+│ Ile-de-France              │ Paris          │ 95   │ Val-d'Oise              │ Cergy-Pontoise       │
+│ La Réunion                 │ Saint-Denis    │ 974  │ La Réunion              │ Saint-Denis          │
+│ Martinique                 │ Fort-de-France │ 972  │ Martinique              │ Fort-de-France       │
+│ Mayotte                    │ Mamoudzou      │ 976  │ Mayotte                 │ Mamoudzou            │
+│ Normandie                  │ Rouen          │ 14   │ Calvados                │ Caen                 │
+│ Normandie                  │ Rouen          │ 27   │ Eure                    │ Évreux               │
+│ Normandie                  │ Rouen          │ 50   │ Manche                  │ Saint-Lô             │
+│ Normandie                  │ Rouen          │ 61   │ Orne                    │ Alençon              │
+│ Normandie                  │ Rouen          │ 76   │ Seine-Maritime          │ Rouen                │
+│ Nouvelle-Aquitaine         │ Bordeaux       │ 16   │ Charente                │ Angoulême            │
+│ Nouvelle-Aquitaine         │ Bordeaux       │ 17   │ Charente-Maritime       │ La Rochelle          │
+│ Nouvelle-Aquitaine         │ Bordeaux       │ 19   │ Corrèze                 │ Tulle                │
+│ Nouvelle-Aquitaine         │ Bordeaux       │ 23   │ Creuse                  │ Guéret               │
+│ Nouvelle-Aquitaine         │ Bordeaux       │ 24   │ Dordogne                │ Périgueux            │
+│ Nouvelle-Aquitaine         │ Bordeaux       │ 33   │ Gironde                 │ Bordeaux             │
+│ Nouvelle-Aquitaine         │ Bordeaux       │ 40   │ Landes                  │ Mont-de-Marsan       │
+│ Nouvelle-Aquitaine         │ Bordeaux       │ 47   │ Lot-et-Garonne          │ Agen                 │
+│ Nouvelle-Aquitaine         │ Bordeaux       │ 64   │ Pyrénées-Atlantiques    │ Pau                  │
+│ Nouvelle-Aquitaine         │ Bordeaux       │ 79   │ Deux-Sèvres             │ Niort                │
+│ Nouvelle-Aquitaine         │ Bordeaux       │ 86   │ Vienne                  │ Poitiers             │
+│ Nouvelle-Aquitaine         │ Bordeaux       │ 87   │ Haute-Vienne            │ Limoges              │
+│ Occitanie                  │ Toulouse       │ 9    │ Ariège                  │ Foix                 │
+│ Occitanie                  │ Toulouse       │ 11   │ Aude                    │ Carcassonne          │
+│ Occitanie                  │ Toulouse       │ 12   │ Aveyron                 │ Rodez                │
+│ Occitanie                  │ Toulouse       │ 30   │ Gard                    │ Nîmes                │
+│ Occitanie                  │ Toulouse       │ 31   │ Haute-Garonne           │ Toulouse             │
+│ Occitanie                  │ Toulouse       │ 32   │ Gers                    │ Auch                 │
+│ Occitanie                  │ Toulouse       │ 34   │ Hérault                 │ Montpellier          │
+│ Occitanie                  │ Toulouse       │ 46   │ Lot                     │ Cahors               │
+│ Occitanie                  │ Toulouse       │ 48   │ Lozère                  │ Mende                │
+│ Occitanie                  │ Toulouse       │ 65   │ Hautes-Pyrénées         │ Tarbes               │
+│ Occitanie                  │ Toulouse       │ 66   │ Pyrénées-Orientales     │ Perpignan            │
+│ Occitanie                  │ Toulouse       │ 81   │ Tarn                    │ Albi                 │
+│ Occitanie                  │ Toulouse       │ 82   │ Tarn-et-Garonne         │ Montauban            │
+│ Pays de la Loire           │ Nantes         │ 44   │ Loire-Atlantique        │ Nantes               │
+│ Pays de la Loire           │ Nantes         │ 49   │ Maine-et-Loire          │ Angers               │
+│ Pays de la Loire           │ Nantes         │ 53   │ Mayenne                 │ Laval                │
+│ Pays de la Loire           │ Nantes         │ 72   │ Sarthe                  │ Le Mans              │
+│ Pays de la Loire           │ Nantes         │ 85   │ Vendée                  │ La Roche-sur-Yon     │
+│ Provence-Alpes-Côte d'Azur │ Marseille      │ 4    │ Alpes-de-Haute-Provence │ Digne-les-Bains      │
+│ Provence-Alpes-Côte d'Azur │ Marseille      │ 5    │ Hautes-Alpes            │ Gap                  │
+│ Provence-Alpes-Côte d'Azur │ Marseille      │ 6    │ Alpes-Maritimes         │ Nice                 │
+│ Provence-Alpes-Côte d'Azur │ Marseille      │ 13   │ Bouches-du-Rhône        │ Marseille            │
+│ Provence-Alpes-Côte d'Azur │ Marseille      │ 83   │ Var                     │ Toulon               │
+│ Provence-Alpes-Côte d'Azur │ Marseille      │ 84   │ Vaucluse                │ Avignon              │
+└────────────────────────────┴────────────────┴──────┴─────────────────────────┴──────────────────────┘
+┌──────┬────────────────┬─────────────┐
+│ code │      nom       │ prefecture  │
+├──────┼────────────────┼─────────────┤
+│ 18   │ Cher           │ Bourges     │
+│ 28   │ Eure-et-Loir   │ Chartres    │
+│ 36   │ Indre          │ Châteauroux │
+│ 37   │ Indre-et-Loire │ Tours       │
+│ 41   │ Loir-et-Cher   │ Blois       │
+│ 45   │ Loiret         │ Orléans     │
+└──────┴────────────────┴─────────────┘
+┌────┐
+│ nb │
+├────┤
+│ 23 │
+└────┘
+┌──────┬──────┐
+│ rid1 │ rid2 │
+├──────┼──────┤
+│ ARA  │ BFC  │
+│ ARA  │ CVL  │
+│ ARA  │ NAQ  │
+│ ARA  │ OCC  │
+│ ARA  │ PAC  │
+│ BFC  │ ARA  │
+│ BFC  │ CVL  │
+│ BFC  │ GES  │
+│ BFC  │ IDF  │
+│ BRE  │ NOR  │
+│ BRE  │ PDL  │
+│ CVL  │ ARA  │
+│ CVL  │ BFC  │
+│ CVL  │ IDF  │
+│ CVL  │ NAQ  │
+│ CVL  │ NOR  │
+│ CVL  │ PDL  │
+│ GES  │ BFC  │
+│ GES  │ HDF  │
+│ GES  │ IDF  │
+│ HDF  │ GES  │
+│ HDF  │ IDF  │
+│ HDF  │ NOR  │
+│ IDF  │ BFC  │
+│ IDF  │ CVL  │
+│ IDF  │ GES  │
+│ IDF  │ HDF  │
+│ IDF  │ NOR  │
+│ NAQ  │ ARA  │
+│ NAQ  │ CVL  │
+│ NAQ  │ OCC  │
+│ NAQ  │ PDL  │
+│ NOR  │ BRE  │
+│ NOR  │ CVL  │
+│ NOR  │ HDF  │
+│ NOR  │ IDF  │
+│ NOR  │ PDL  │
+│ OCC  │ ARA  │
+│ OCC  │ NAQ  │
+│ OCC  │ PAC  │
+│ PAC  │ ARA  │
+│ PAC  │ OCC  │
+│ PDL  │ BRE  │
+│ PDL  │ CVL  │
+│ PDL  │ NAQ  │
+│ PDL  │ NOR  │
+└──────┴──────┘
+┌──────────────────┐
+│ nb_total_voisins │
+├──────────────────┤
+│ 46               │
+└──────────────────┘
+┌────────────────────────────┬────────────────────────────┐
+│          Region1           │          Region2           │
+├────────────────────────────┼────────────────────────────┤
+│ Auvergne-Rhône-Alpes       │ Bourgogne-Franche-Comté    │
+│ Auvergne-Rhône-Alpes       │ Centre-Val de Loire        │
+│ Auvergne-Rhône-Alpes       │ Nouvelle-Aquitaine         │
+│ Auvergne-Rhône-Alpes       │ Occitanie                  │
+│ Auvergne-Rhône-Alpes       │ Provence-Alpes-Côte d'Azur │
+│ Bourgogne-Franche-Comté    │ Auvergne-Rhône-Alpes       │
+│ Bourgogne-Franche-Comté    │ Centre-Val de Loire        │
+│ Bourgogne-Franche-Comté    │ Grand Est                  │
+│ Bourgogne-Franche-Comté    │ Ile-de-France              │
+│ Bretagne                   │ Normandie                  │
+│ Bretagne                   │ Pays de la Loire           │
+│ Centre-Val de Loire        │ Auvergne-Rhône-Alpes       │
+│ Centre-Val de Loire        │ Bourgogne-Franche-Comté    │
+│ Centre-Val de Loire        │ Ile-de-France              │
+│ Centre-Val de Loire        │ Nouvelle-Aquitaine         │
+│ Centre-Val de Loire        │ Normandie                  │
+│ Centre-Val de Loire        │ Pays de la Loire           │
+│ Grand Est                  │ Bourgogne-Franche-Comté    │
+│ Grand Est                  │ Hauts-de-France            │
+│ Grand Est                  │ Ile-de-France              │
+│ Hauts-de-France            │ Grand Est                  │
+│ Hauts-de-France            │ Ile-de-France              │
+│ Hauts-de-France            │ Normandie                  │
+│ Ile-de-France              │ Bourgogne-Franche-Comté    │
+│ Ile-de-France              │ Centre-Val de Loire        │
+│ Ile-de-France              │ Grand Est                  │
+│ Ile-de-France              │ Hauts-de-France            │
+│ Ile-de-France              │ Normandie                  │
+│ Nouvelle-Aquitaine         │ Auvergne-Rhône-Alpes       │
+│ Nouvelle-Aquitaine         │ Centre-Val de Loire        │
+│ Nouvelle-Aquitaine         │ Occitanie                  │
+│ Nouvelle-Aquitaine         │ Pays de la Loire           │
+│ Normandie                  │ Bretagne                   │
+│ Normandie                  │ Centre-Val de Loire        │
+│ Normandie                  │ Hauts-de-France            │
+│ Normandie                  │ Ile-de-France              │
+│ Normandie                  │ Pays de la Loire           │
+│ Occitanie                  │ Auvergne-Rhône-Alpes       │
+│ Occitanie                  │ Nouvelle-Aquitaine         │
+│ Occitanie                  │ Provence-Alpes-Côte d'Azur │
+│ Provence-Alpes-Côte d'Azur │ Auvergne-Rhône-Alpes       │
+│ Provence-Alpes-Côte d'Azur │ Occitanie                  │
+│ Pays de la Loire           │ Bretagne                   │
+│ Pays de la Loire           │ Centre-Val de Loire        │
+│ Pays de la Loire           │ Nouvelle-Aquitaine         │
+│ Pays de la Loire           │ Normandie                  │
+└────────────────────────────┴────────────────────────────┘
+┌────────────────────────────┬────────────┐
+│           region           │ nb_voisins │
+├────────────────────────────┼────────────┤
+│ Centre-Val de Loire        │ 6          │
+│ Normandie                  │ 5          │
+│ Ile-de-France              │ 5          │
+│ Auvergne-Rhône-Alpes       │ 5          │
+│ Pays de la Loire           │ 4          │
+│ Nouvelle-Aquitaine         │ 4          │
+│ Bourgogne-Franche-Comté    │ 4          │
+│ Occitanie                  │ 3          │
+│ Hauts-de-France            │ 3          │
+│ Grand Est                  │ 3          │
+│ Provence-Alpes-Côte d'Azur │ 2          │
+│ Bretagne                   │ 2          │
+│ Mayotte                    │ 0          │
+│ Martinique                 │ 0          │
+│ La Réunion                 │ 0          │
+│ Guyane                     │ 0          │
+│ Guadeloupe                 │ 0          │
+│ Corse                      │ 0          │
+└────────────────────────────┴────────────┘
+┌─────────────┬───────────────────┬────────────────────┐
+│ departement │      commune      │      quartier      │
+├─────────────┼───────────────────┼────────────────────┤
+│ Essonne     │ Massy/Antony (92) │ Le Grand Ensemble* │
+└─────────────┴───────────────────┴────────────────────┘
+┌─────────────────────────┬─────────────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
+│       departement       │                       commune                       │                           quartier                           │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Ain                     │ Bourg-en-Bresse                                     │ Le Pont des Chèvres, Reyssouze                               │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Aisne                   │ Laon                                                │ Champagne, Moulin Roux                                       │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Aisne                   │ Laon                                                │ Ile de France                                                │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Aisne                   │ Laon                                                │ Montreuil                                                    │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Allier                  │ Moulins                                             │ Les Chartreux                                                │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Allier                  │ Moulins                                             │ Moulins Sud : Champins, Champmilan, Nomazy                   │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Alpes-de-Haute-Provence │ Digne-les-Bains                                     │ Le Pigeonnier,  Barbejas                                     │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Alpes-Maritimes         │ Nice, Saint-André                                   │ L'Ariane*                                                    │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Alpes-Maritimes         │ Nice                                                │ Saint Augustin                                               │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Alpes-Maritimes         │ Nice                                                │ Saint Charles, Bon Voyage, Pasteur, Mont Gros                │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Alpes-Maritimes         │ Nice                                                │ Trachel                                                      │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Ardennes                │ Charleville-Mézières                                │ Houillère                                                    │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Ardennes                │ Charleville-Mézières                                │ Manchester                                                   │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Ardennes                │ Charleville-Mézières                                │ Ronde Couture                                                │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Aube                    │ La Chapelle-Saint-Luc, Les Noës-Près-Troyes, Troyes │ Chantereigne Montvilliers *                                  │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Aube                    │ Troyes                                              │ Les Chartreux                                                │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Aube                    │ Troyes                                              │ Point du Jour                                                │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Aube                    │ Troyes                                              │ Vouldy, Jules Guesde, Trévois, Les Sénardes                  │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Aude                    │ Carcassonne                                         │ La Conte                                                     │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Aude                    │ Carcassonne                                         │ Le Viguier : Saint Jacques                                   │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Bouches-du-Rhône        │ Marseille 1er, 2e, 3e et 6e                         │ Centre Nord                                                  │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Bouches-du-Rhône        │ Marseille 12e et 13e                                │ La Rose, Frais Vallon, Le Petit Séminaire                    │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Bouches-du-Rhône        │ Marseille 9e                                        │ Les Hauts de Mazargues                                       │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Bouches-du-Rhône        │ Marseille 15e et 16e                                │ Nord Littoral : Plan d'Aou, La Bricarde, La Castellanne, Le  │
+│                         │                                                     │ Vallon, Mourepiane                                           │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Bouches-du-Rhône        │ Marseille 16e                                       │ L'Estaque, Saumaty                                           │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Bouches-du-Rhône        │ Marseille 15e et 16e                                │ Quinzième Sud : Consolat, Viste, Aygalades                   │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Bouches-du-Rhône        │ Marseille 15e                                       │ Saint Antoine Est : La Savine, Notre Dame Limite             │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Bouches-du-Rhône        │ Marseille 14e et 15e                                │ Saint Barthélémy, Le Canet, Delorme Paternelle               │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Bouches-du-Rhône        │ Marseille 3e et 15e                                 │ Saint Mauront, Bellevue, Cabucelle                           │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Bouches-du-Rhône        │ Marseille 11e et 12e                                │ Air Bel                                                      │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Bouches-du-Rhône        │ Marseille 10e et 11e                                │ Vallée de l'Huveaune : Rouguière, Saint Marcel               │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Bouches-du-Rhône        │ Marseille 13e                                       │ Malpassé, Saint Jérôme                                       │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Calvados                │ Caen                                                │ La Grâce de Dieu                                             │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Calvados                │ Caen                                                │ La Guérinière                                                │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Calvados                │ Caen                                                │ Pierre Heuzé                                                 │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Charente                │ Angoulême                                           │ Basseau, Grande Garenne                                      │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Charente                │ Angoulême                                           │ Bel Air, Grand Font                                          │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Charente                │ Angoulême                                           │ Ma Campagne                                                  │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Charente-Maritime       │ La Rochelle                                         │ Mireuil, Laleu, La Pallice, La Rossignolette                 │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Charente-Maritime       │ La Rochelle                                         │ Villeneuve les Salines                                       │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Cher                    │ Bourges                                             │ Aéroport                                                     │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Cher                    │ Bourges                                             │ Bourges Nord :  Chancellerie, Gibjoncs, Turly, Barbottes     │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Corse-du-Sud            │ Ajaccio                                             │ Cannes, Les Salines                                          │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Corse-du-Sud            │ Ajaccio                                             │ Jardins Empereur                                             │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Corse-du-Sud            │ Ajaccio                                             │ Pietralba                                                    │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Corse-du-Sud            │ Ajaccio                                             │ Saint Jean                                                   │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Haute-Corse             │ Bastia                                              │ Quartiers Sud                                                │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Côte-d'Or               │ Dijon                                               │ Les Grésilles                                                │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Côtes-d'Armor           │ Saint-Brieuc                                        │ Croix Saint Lambert, Ville Oger                              │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Côtes-d'Armor           │ Saint-Brieuc                                        │ Le Plateau, Balzac, Ginglin                                  │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Côtes-d'Armor           │ Saint-Brieuc                                        │ Point du Jour, Waron, Saint Jouan, Tour d'Auvergne           │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Doubs                   │ Besançon                                            │ Cité Brûlard                                                 │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Doubs                   │ Besançon                                            │ Clairs Soleils                                               │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Doubs                   │ Besançon                                            │ Palente, Orchamps                                            │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Doubs                   │ Besançon                                            │ Planoise                                                     │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Drôme                   │ Valence                                             │ Le Polygone                                                  │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Drôme                   │ Valence                                             │ Valence le Haut : Fontbarlette, Le Plan                      │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Eure                    │ Évreux                                              │ Clos au Duc                                                  │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Eure                    │ Évreux                                              │ La Madeleine                                                 │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Eure                    │ Évreux                                              │ Nétreville                                                   │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Eure-et-Loir            │ Chartres                                            │ Beaulieu, Hauts de Chartres, Saint Chéron                    │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Finistère               │ Quimper                                             │ Kermoysan                                                    │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Gard                    │ Nîmes                                               │ Chemin Bas d'Avignon                                         │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Gard                    │ Nîmes                                               │ Mas de Mingue                                                │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Gard                    │ Nîmes                                               │ ZUP Pissevin, Valdegour                                      │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Haute-Garonne           │ Toulouse                                            │ Empalot                                                      │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Haute-Garonne           │ Toulouse                                            │ Faourette, Bordelongue, Bagatelle                            │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Haute-Garonne           │ Toulouse                                            │ La Reynerie, Bellefontaine                                   │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Haute-Garonne           │ Toulouse                                            │ Les Izards                                                   │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Gironde                 │ Bègles, Bordeaux                                    │ Yves Farges*, Belcier*                                       │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Gironde                 │ Bordeaux                                            │ Bacalan, Claveau                                             │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Gironde                 │ Bordeaux, Cenon, Floirac                            │ Cité Benauge (Bastide)*, Bas Cenon*, Cité Libération*        │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Gironde                 │ Bordeaux                                            │ Les Aubiers                                                  │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Gironde                 │ Bordeaux                                            │ Saint Michel                                                 │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Gironde                 │ Bordeaux, Cenon, Floirac, Lormont                   │ Hauts de Garonne*, Bastide* : Quais Queyries, Brazza         │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Hérault                 │ Montpellier                                         │ Gély, Figuerolles                                            │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Hérault                 │ Montpellier                                         │ La Paillade                                                  │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Hérault                 │ Montpellier                                         │ Les Cévennes                                                 │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Hérault                 │ Montpellier                                         │ Pas du Loup, Val de Croze, Paul Valéry                       │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Hérault                 │ Montpellier                                         │ Le Petit Bard, Pergola                                       │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Ille-et-Vilaine         │ Rennes                                              │ Cleunay                                                      │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Ille-et-Vilaine         │ Rennes                                              │ Les Champs Manceaux, Les Cloteaux                            │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Ille-et-Vilaine         │ Rennes                                              │ Le Blosne                                                    │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Ille-et-Vilaine         │ Rennes                                              │ Maurepas                                                     │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Ille-et-Vilaine         │ Rennes                                              │ Villejean                                                    │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Indre                   │ Châteauroux                                         │ Beaulieu                                                     │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Indre                   │ Châteauroux                                         │ Saint Jean                                                   │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Indre                   │ Châteauroux                                         │ Vaugirard                                                    │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Indre-et-Loire          │ Joué-lès-Tours                                      │ La Rabière                                                   │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Indre-et-Loire          │ Tours                                               │ Le Sanitas                                                   │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Isère                   │ Grenoble                                            │ Village Olympique, La Villeneuve : Arlequins, Baladins       │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Isère                   │ Grenoble                                            │ Mistral                                                      │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Isère                   │ Grenoble                                            │ Teisseire, L'Abbaye, Jouhaux, Châtelet                       │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Jura                    │ Lons-le-Saunier                                     │ La Marjorie, Les Mouillères                                  │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Landes                  │ Mont-de-Marsan                                      │ Le Peyrouat                                                  │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Loir-et-Cher            │ Blois                                               │ Bégon, Croix Chevalier                                       │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Loire                   │ Saint-Étienne                                       │ Montchovet                                                   │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Loire                   │ Saint-Étienne                                       │ Montreynaud                                                  │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Loire                   │ Saint-Étienne                                       │ Tarentaise, Beaubrun, Séverine                               │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Haute-Loire             │ Le Puy-en-Velay                                     │ Quartier Guitard                                             │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Loire-Atlantique        │ Nantes, Saint-Herblain                              │ Bellevue*                                                    │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Loire-Atlantique        │ Nantes                                              │ Les Dervallières                                             │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Loire-Atlantique        │ Nantes                                              │ Malakoff                                                     │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Loire-Atlantique        │ Nantes                                              │ Quartier Est                                                 │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Loire-Atlantique        │ Nantes                                              │ Quartiers Nord                                               │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Loiret                  │ Orléans                                             │ Argonne                                                      │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Loiret                  │ Orléans                                             │ La Source                                                    │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Lot-et-Garonne          │ Agen                                                │ Montanou                                                     │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Lot-et-Garonne          │ Agen                                                │ Zone Sud Est : Cité Rodrigue, Cité Tapie, Cité Barleté       │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Maine-et-Loire          │ Angers                                              │ Belle Beille                                                 │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Maine-et-Loire          │ Angers                                              │ Monplaisir                                                   │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Maine-et-Loire          │ Angers                                              │ Verneau, Capucins                                            │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Manche                  │ Saint-Lô                                            │ Val Saint Jean                                               │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Marne                   │ Châlons-en-Champagne                                │ Rive Gauche : Mont Saint Michel, La Bidée, Frison Gare       │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Marne                   │ Châlons-en-Champagne                                │ Schmit                                                       │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Marne                   │ Châlons-en-Champagne                                │ Vallée Saint Pierre                                          │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Marne                   │ Châlons-en-Champagne                                │ Verbeau, Alsace                                              │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Mayenne                 │ Laval                                               │ Les Fourches                                                 │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Mayenne                 │ Laval                                               │ Les Pommeraies                                               │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Mayenne                 │ Laval                                               │ ZUP Saint Nicolas                                            │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Meurthe-et-Moselle      │ Laxou, Maxéville, Nancy                             │ Champ le Boeuf*, Les Aulnes*, Le Haut du Lièvre*             │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Meurthe-et-Moselle      │ Vandoeuvre-lès-Nancy                                │ Les Nations                                                  │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Morbihan                │ Vannes                                              │ Kercado                                                      │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Morbihan                │ Vannes                                              │ Ménimur                                                      │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Moselle                 │ Metz                                                │ Bellecroix                                                   │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Moselle                 │ Metz                                                │ Borny (Les Hauts de Blémont)                                 │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Moselle                 │ Metz                                                │ Chemin de la Moselle                                         │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Moselle                 │ Metz                                                │ Hannaux, Frécot, Barral                                      │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Moselle                 │ Metz, Woippy                                        │ Pré Génie*, Saint Eloy                                       │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Nièvre                  │ Nevers                                              │ La Grande Pâture                                             │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Nièvre                  │ Nevers                                              │ Le Banlay                                                    │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Nièvre                  │ Nevers                                              │ Les Bords de Loire                                           │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Nord                    │ Lille                                               │ Bois Blancs                                                  │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Nord                    │ Lille                                               │ Fives                                                        │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Nord                    │ Lille, Loos                                         │ Faubourg de Béthune, Moulins, Lille Sud*, L'Epi de Soil*     │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Nord                    │ Lille                                               │ Vieux Moulins                                                │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Nord                    │ Lille                                               │ Wazemmes                                                     │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Oise                    │ Beauvais                                            │ Argentine                                                    │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Oise                    │ Beauvais                                            │ Saint Jean                                                   │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Orne                    │ Alençon                                             │ Courteille                                                   │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Orne                    │ Alençon                                             │ Perseigne                                                    │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Pas-de-Calais           │ Arras                                               │ Résidence Saint Pol, Blancs Monts, Beaudimont                │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Puy-de-Dôme             │ Clermont-Ferrand                                    │ Croix de Neyrat, Quartiers Nord : Champratel, Les Vergnes, L │
+│                         │                                                     │ a Gauthière, La Plaine                                       │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Puy-de-Dôme             │ Clermont-Ferrand                                    │ Fontaine du Bac                                              │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Puy-de-Dôme             │ Clermont-Ferrand                                    │ Herbet                                                       │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Puy-de-Dôme             │ Clermont-Ferrand                                    │ Saint Jacques                                                │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Pyrénées-Atlantiques    │ Pau                                                 │ Berlioz                                                      │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Pyrénées-Atlantiques    │ Pau                                                 │ Dufau Tourasse                                               │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Pyrénées-Atlantiques    │ Pau                                                 │ Ousse des Bois, Le Hameau                                    │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Hautes-Pyrénées         │ Tarbes                                              │ Quartier Nord : Laubadère                                    │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Hautes-Pyrénées         │ Tarbes                                              │ Solazur                                                      │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Pyrénées-Orientales     │ Perpignan                                           │ Le Vernet                                                    │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Pyrénées-Orientales     │ Perpignan                                           │ Saint Jacques, Saint Mathieu, La Réal                        │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Bas-Rhin                │ Bischheim, Hoenheim, Schiltigheim,  Strasbourg      │ Grand Ried : At Home*, Ried*, Cité d'Ill*                    │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Bas-Rhin                │ Strasbourg                                          │ Cronenbourg (Cité Nucléaire)                                 │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Bas-Rhin                │ Strasbourg                                          │ Elsau, Montagne Verte                                        │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Bas-Rhin                │ Strasbourg                                          │ Hautepierre                                                  │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Bas-Rhin                │ Strasbourg                                          │ Koenigshoffen (Secteur Ouest)                                │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Bas-Rhin                │ Strasbourg                                          │ Meinau  (Canardière Est)                                     │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Bas-Rhin                │ Strasbourg                                          │ Neuhof (Cités)                                               │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Bas-Rhin                │ Strasbourg                                          │ Port du Rhin                                                 │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Haut-Rhin               │ Colmar                                              │ Europe                                                       │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Rhône                   │ Lyon 9e                                             │ La Duchère                                                   │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Rhône                   │ Lyon 8e                                             │ Etats Unis                                                   │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Rhône                   │ Lyon 3e et 7e                                       │ La Guillotière                                               │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Rhône                   │ Lyon 8e                                             │ Mermoz                                                       │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Rhône                   │ Lyon 1er                                            │ Pentes Croix Rousse                                          │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Haute-Saône             │ Vesoul                                              │ Montmarin                                                    │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Saône-et-Loire          │ Mâcon                                               │ Chanaye, Résidence                                           │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Saône-et-Loire          │ Mâcon                                               │ Les Saugeraies, Gautriats                                    │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Sarthe                  │ Coulaines, Le Mans                                  │ Bellevue*                                                    │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Sarthe                  │ Le Mans                                             │ L'Epine                                                      │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Sarthe                  │ Le Mans                                             │ Les Sablons                                                  │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Sarthe                  │ Le Mans                                             │ Ronceray, Glonnières                                         │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Savoie                  │ Chambéry                                            │ Chambéry le Haut, Chantemerle, Le Piochet, La Cassine        │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Savoie                  │ Chambéry                                            │ Le Biollay, Bellevue                                         │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Paris                   │ Paris 18e                                           │ HBM Aubervilliers                                            │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Paris                   │ Paris 20e                                           │ HBM Ménilmontant                                             │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Paris                   │ Paris 18e                                           │ La Goutte d'Or                                               │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Paris                   │ Paris 10e                                           │ Porte Saint Denis, Porte Saint Martin                        │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Paris                   │ Paris 11e                                           │ Fontaine au Roi                                              │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Paris                   │ Paris 17e                                           │ Porte de Saint Ouen, Porte de Clichy                         │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Paris                   │ Paris 18e                                           │ Porte de Montmartre                                          │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Paris                   │ Paris 19e                                           │ Curial, Cambrai, Alphonse Karr                               │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Paris                   │ Paris 20e                                           │ Belleville                                                   │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Seine-Maritime          │ Rouen                                               │ Le Plateau : Les Sapins, Châtelet, La Lombardie, La Grand'Ma │
+│                         │                                                     │ re                                                           │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Seine-Maritime          │ Rouen                                               │ La Sablière                                                  │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Seine-Maritime          │ Sotteville-lès-Rouen                                │ Quartier Fernand Buisson                                     │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Seine-Maritime          │ Sotteville-lès-Rouen                                │ Quartier Gadeau de Kerville                                  │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Seine-et-Marne          │ Melun                                               │ Quartiers Nord                                               │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Deux-Sèvres             │ Niort                                               │ Tour Chabot, Gavacherie, Clou Bouchet                        │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Somme                   │ Amiens                                              │ Etouvie                                                      │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Somme                   │ Amiens                                              │ Quartier Nord                                                │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Somme                   │ Amiens                                              │ Quartier Sud Est                                             │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Tarn                    │ Albi                                                │ Cantepau                                                     │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Tarn                    │ Albi                                                │ Lapanouse, Saint Martin                                      │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Var                     │ Toulon                                              │ Centre Ancien                                                │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Var                     │ Toulon                                              │ La Beaucaire                                                 │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Var                     │ Toulon                                              │ Le Jonquet, La Baume, Le Guynemer                            │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Var                     │ Toulon                                              │ Sainte Musse                                                 │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Vaucluse                │ Avignon                                             │ Croix des Oiseaux, Saint Chamand                             │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Vaucluse                │ Avignon                                             │ Monclar                                                      │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Vaucluse                │ Avignon                                             │ Quartiers Est : Saint Jean, Reine Jeanne, Grange d'Orel      │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Vendée                  │ La Roche-sur-Yon                                    │ Les Pyramides, Les Forges                                    │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Vienne                  │ Poitiers                                            │ Bel Air, Poitiers Ouest                                      │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Vienne                  │ Poitiers                                            │ Bellejouanne, Poitiers Sud                                   │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Haute-Vienne            │ Limoges                                             │ Beaubreuil                                                   │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Haute-Vienne            │ Limoges                                             │ La Bastide                                                   │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Haute-Vienne            │ Limoges                                             │ Val de l'Aurence                                             │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Vosges                  │ Épinal                                              │ Bitola                                                       │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Vosges                  │ Épinal                                              │ La Vierge                                                    │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Vosges                  │ Épinal                                              │ Plateau Justice, ZAC, Saut le Cerf                           │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Yonne                   │ Auxerre                                             │ Quartiers Est                                                │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Yonne                   │ Auxerre                                             │ Les Brichères                                                │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Yonne                   │ Auxerre                                             │ Rosoirs                                                      │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Yonne                   │ Auxerre                                             │ Saint Siméon, Sainte Geneviève                               │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Territoire de Belfort   │ Belfort                                             │ Les Glacis                                                   │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Territoire de Belfort   │ Belfort                                             │ Les Résidences                                               │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Hauts-de-Seine          │ Nanterre                                            │ Chemin de l'Ile                                              │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Hauts-de-Seine          │ Nanterre                                            │ Le Parc                                                      │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Hauts-de-Seine          │ Nanterre                                            │ Petit Nanterre                                               │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Hauts-de-Seine          │ Nanterre                                            │ Provinces Françaises, Marcellin Berthelot, Anatole France    │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Seine-Saint-Denis       │ Aubervilliers, Saint-Denis                          │ Landy*                                                       │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Seine-Saint-Denis       │ Bobigny                                             │ Karl Marx, Paul Eluard                                       │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Seine-Saint-Denis       │ Bobigny, Drancy                                     │ L'Abreuvoir*                                                 │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Seine-Saint-Denis       │ Bobigny, Pantin                                     │ Etoile, Grémillon, Pont de Pierre*, Les Courtillières*       │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Seine-Saint-Denis       │ Saint-Denis                                         │ Cité Allende                                                 │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Seine-Saint-Denis       │ Saint-Denis                                         │ Floréal, Saussaie                                            │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Seine-Saint-Denis       │ Saint-Denis                                         │ Les Francs Moisins, Bel Air                                  │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Val-de-Marne            │ Créteil                                             │ Les Planètes, Bleuets, Bordières                             │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Val-de-Marne            │ Créteil                                             │ Habette, Square Martinez, Côte d'Or                          │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Val-de-Marne            │ Créteil                                             │ Hauts du Mont Mesly                                          │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Val-de-Marne            │ Créteil                                             │ Palais, Sablières                                            │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Guadeloupe              │ Basse-Terre                                         │ Rivière des Pères                                            │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Guadeloupe              │ Basse-Terre                                         │ Le Carmel                                                    │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Martinique              │ Fort-de-France                                      │ Dillon                                                       │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Martinique              │ Fort-de-France                                      │ Godissart                                                    │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Martinique              │ Fort-de-France                                      │ Terres Sainville                                             │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Martinique              │ Fort-de-France                                      │ Trénelle Citron                                              │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Martinique              │ Fort-de-France                                      │ Volga                                                        │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Guyane                  │ Cayenne                                             │ Village Chinois, Quartiers Sud                               │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ La Réunion              │ Saint-Denis                                         │ Camélias, Vauban                                             │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ La Réunion              │ Saint-Denis                                         │ Commune Prima, Domenjod                                      │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ La Réunion              │ Saint-Denis                                         │ Le Chaudron, Moufia, Cerf, Sainte Clotilde                   │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ La Réunion              │ Saint-Denis                                         │ La Source, Bellepierre                                       │
+├─────────────────────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ Mayotte                 │ Mamoudzou                                           │ N'Gombani                                                    │
+└─────────────────────────┴─────────────────────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
+┌─────┬───────┐
+│ nb  │ type  │
+├─────┼───────┤
+│ 751 │ Total │
+│ 246 │ Oui   │
+│ 505 │ Non   │
+└─────┴───────┘
+┌──────┬─────────────────────────┬────────────────────────────┬────────┐
+│ code │       departement       │           region           │ nb_zus │
+├──────┼─────────────────────────┼────────────────────────────┼────────┤
+│ 59   │ Nord                    │ Hauts-de-France            │ 49     │
+│ 93   │ Seine-Saint-Denis       │ Ile-de-France              │ 36     │
+│ 69   │ Rhône                   │ Auvergne-Rhône-Alpes       │ 30     │
+│ 13   │ Bouches-du-Rhône        │ Provence-Alpes-Côte d'Azur │ 29     │
+│ 91   │ Essonne                 │ Ile-de-France              │ 26     │
+│ 62   │ Pas-de-Calais           │ Hauts-de-France            │ 24     │
+│ 94   │ Val-de-Marne            │ Ile-de-France              │ 23     │
+│ 57   │ Moselle                 │ Grand Est                  │ 22     │
+│ 95   │ Val-d'Oise              │ Ile-de-France              │ 22     │
+│ 76   │ Seine-Maritime          │ Normandie                  │ 20     │
+│ 92   │ Hauts-de-Seine          │ Ile-de-France              │ 16     │
+│ 78   │ Yvelines                │ Ile-de-France              │ 16     │
+│ 974  │ La Réunion              │ La Réunion                 │ 15     │
+│ 25   │ Doubs                   │ Bourgogne-Franche-Comté    │ 13     │
+│ 33   │ Gironde                 │ Nouvelle-Aquitaine         │ 13     │
+│ 34   │ Hérault                 │ Occitanie                  │ 13     │
+│ 51   │ Marne                   │ Grand Est                  │ 13     │
+│ 38   │ Isère                   │ Auvergne-Rhône-Alpes       │ 12     │
+│ 67   │ Bas-Rhin                │ Grand Est                  │ 10     │
+│ 28   │ Eure-et-Loir            │ Centre-Val de Loire        │ 10     │
+│ 30   │ Gard                    │ Occitanie                  │ 10     │
+│ 44   │ Loire-Atlantique        │ Pays de la Loire           │ 10     │
+│ 49   │ Maine-et-Loire          │ Pays de la Loire           │ 10     │
+│ 68   │ Haut-Rhin               │ Grand Est                  │ 9      │
+│ 54   │ Meurthe-et-Moselle      │ Grand Est                  │ 9      │
+│ 75   │ Paris                   │ Ile-de-France              │ 9      │
+│ 77   │ Seine-et-Marne          │ Ile-de-France              │ 9      │
+│ 2    │ Aisne                   │ Hauts-de-France            │ 8      │
+│ 3    │ Allier                  │ Auvergne-Rhône-Alpes       │ 8      │
+│ 8    │ Ardennes                │ Grand Est                  │ 8      │
+│ 10   │ Aube                    │ Grand Est                  │ 8      │
+│ 971  │ Guadeloupe              │ Guadeloupe                 │ 8      │
+│ 42   │ Loire                   │ Auvergne-Rhône-Alpes       │ 8      │
+│ 60   │ Oise                    │ Hauts-de-France            │ 8      │
+│ 63   │ Puy-de-Dôme             │ Auvergne-Rhône-Alpes       │ 8      │
+│ 35   │ Ille-et-Vilaine         │ Bretagne                   │ 7      │
+│ 83   │ Var                     │ Provence-Alpes-Côte d'Azur │ 7      │
+│ 89   │ Yonne                   │ Bourgogne-Franche-Comté    │ 7      │
+│ 26   │ Drôme                   │ Auvergne-Rhône-Alpes       │ 6      │
+│ 972  │ Martinique              │ Martinique                 │ 6      │
+│ 56   │ Morbihan                │ Bretagne                   │ 6      │
+│ 64   │ Pyrénées-Atlantiques    │ Nouvelle-Aquitaine         │ 6      │
+│ 71   │ Saône-et-Loire          │ Bourgogne-Franche-Comté    │ 6      │
+│ 81   │ Tarn                    │ Occitanie                  │ 6      │
+│ 84   │ Vaucluse                │ Provence-Alpes-Côte d'Azur │ 6      │
+│ 6    │ Alpes-Maritimes         │ Provence-Alpes-Côte d'Azur │ 5      │
+│ 16   │ Charente                │ Nouvelle-Aquitaine         │ 5      │
+│ 17   │ Charente-Maritime       │ Nouvelle-Aquitaine         │ 5      │
+│ 21   │ Côte-d'Or               │ Bourgogne-Franche-Comté    │ 5      │
+│ 27   │ Eure                    │ Normandie                  │ 5      │
+│ 31   │ Haute-Garonne           │ Occitanie                  │ 5      │
+│ 37   │ Indre-et-Loire          │ Centre-Val de Loire        │ 5      │
+│ 45   │ Loiret                  │ Centre-Val de Loire        │ 5      │
+│ 61   │ Orne                    │ Normandie                  │ 5      │
+│ 72   │ Sarthe                  │ Pays de la Loire           │ 5      │
+│ 80   │ Somme                   │ Hauts-de-France            │ 5      │
+│ 88   │ Vosges                  │ Grand Est                  │ 5      │
+│ 14   │ Calvados                │ Normandie                  │ 4      │
+│ 18   │ Cher                    │ Centre-Val de Loire        │ 4      │
+│ 2A   │ Corse-du-Sud            │ Corse                      │ 4      │
+│ 29   │ Finistère               │ Bretagne                   │ 4      │
+│ 973  │ Guyane                  │ Guyane                     │ 4      │
+│ 70   │ Haute-Saône             │ Bourgogne-Franche-Comté    │ 4      │
+│ 58   │ Nièvre                  │ Bourgogne-Franche-Comté    │ 4      │
+│ 11   │ Aude                    │ Occitanie                  │ 3      │
+│ 22   │ Côtes-d'Armor           │ Bretagne                   │ 3      │
+│ 87   │ Haute-Vienne            │ Nouvelle-Aquitaine         │ 3      │
+│ 36   │ Indre                   │ Centre-Val de Loire        │ 3      │
+│ 39   │ Jura                    │ Bourgogne-Franche-Comté    │ 3      │
+│ 41   │ Loir-et-Cher            │ Centre-Val de Loire        │ 3      │
+│ 50   │ Manche                  │ Normandie                  │ 3      │
+│ 53   │ Mayenne                 │ Pays de la Loire           │ 3      │
+│ 90   │ Territoire de Belfort   │ Bourgogne-Franche-Comté    │ 3      │
+│ 86   │ Vienne                  │ Nouvelle-Aquitaine         │ 3      │
+│ 1    │ Ain                     │ Auvergne-Rhône-Alpes       │ 2      │
+│ 7    │ Ardèche                 │ Auvergne-Rhône-Alpes       │ 2      │
+│ 52   │ Haute-Marne             │ Grand Est                  │ 2      │
+│ 74   │ Haute-Savoie            │ Auvergne-Rhône-Alpes       │ 2      │
+│ 65   │ Hautes-Pyrénées         │ Occitanie                  │ 2      │
+│ 40   │ Landes                  │ Nouvelle-Aquitaine         │ 2      │
+│ 47   │ Lot-et-Garonne          │ Nouvelle-Aquitaine         │ 2      │
+│ 55   │ Meuse                   │ Grand Est                  │ 2      │
+│ 66   │ Pyrénées-Orientales     │ Occitanie                  │ 2      │
+│ 73   │ Savoie                  │ Auvergne-Rhône-Alpes       │ 2      │
+│ 4    │ Alpes-de-Haute-Provence │ Provence-Alpes-Côte d'Azur │ 1      │
+│ 12   │ Aveyron                 │ Occitanie                  │ 1      │
+│ 79   │ Deux-Sèvres             │ Nouvelle-Aquitaine         │ 1      │
+│ 24   │ Dordogne                │ Nouvelle-Aquitaine         │ 1      │
+│ 2B   │ Haute-Corse             │ Corse                      │ 1      │
+│ 43   │ Haute-Loire             │ Auvergne-Rhône-Alpes       │ 1      │
+│ 976  │ Mayotte                 │ Mayotte                    │ 1      │
+│ 85   │ Vendée                  │ Pays de la Loire           │ 1      │
+│ 9    │ Ariège                  │ Occitanie                  │ 0      │
+│ 15   │ Cantal                  │ Auvergne-Rhône-Alpes       │ 0      │
+│ 19   │ Corrèze                 │ Nouvelle-Aquitaine         │ 0      │
+│ 23   │ Creuse                  │ Nouvelle-Aquitaine         │ 0      │
+│ 32   │ Gers                    │ Occitanie                  │ 0      │
+│ 5    │ Hautes-Alpes            │ Provence-Alpes-Côte d'Azur │ 0      │
+│ 46   │ Lot                     │ Occitanie                  │ 0      │
+│ 48   │ Lozère                  │ Occitanie                  │ 0      │
+│ 82   │ Tarn-et-Garonne         │ Occitanie                  │ 0      │
+└──────┴─────────────────────────┴────────────────────────────┴────────┘
+┌────────────────────────────┬────────────┐
+│            nom             │ nb_zus_reg │
+├────────────────────────────┼────────────┤
+│ Ile-de-France              │ 157        │
+│ Hauts-de-France            │ 94         │
+│ Grand Est                  │ 88         │
+│ Auvergne-Rhône-Alpes       │ 81         │
+│ Provence-Alpes-Côte d'Azur │ 48         │
+│ Bourgogne-Franche-Comté    │ 45         │
+│ Occitanie                  │ 42         │
+│ Nouvelle-Aquitaine         │ 41         │
+│ Normandie                  │ 37         │
+│ Centre-Val de Loire        │ 30         │
+│ Pays de la Loire           │ 29         │
+│ Bretagne                   │ 20         │
+│ La Réunion                 │ 15         │
+│ Guadeloupe                 │ 8          │
+│ Martinique                 │ 6          │
+│ Corse                      │ 5          │
+│ Guyane                     │ 4          │
+│ Mayotte                    │ 1          │
+└────────────────────────────┴────────────┘
+┌─────────────────────────┐
+│           nom           │
+├─────────────────────────┤
+│ Bourgogne-Franche-Comté │
+│ Bretagne                │
+│ Corse                   │
+│ Centre-Val de Loire     │
+│ Grand Est               │
+│ Guadeloupe              │
+│ Guyane                  │
+│ Hauts-de-France         │
+│ Ile-de-France           │
+│ La Réunion              │
+│ Martinique              │
+│ Mayotte                 │
+│ Normandie               │
+│ Pays de la Loire        │
+└─────────────────────────┘
+┌─────────────────────────┐
+│           nom           │
+├─────────────────────────┤
+│ Bourgogne-Franche-Comté │
+│ Bretagne                │
+│ Corse                   │
+│ Centre-Val de Loire     │
+│ Grand Est               │
+│ Guadeloupe              │
+│ Guyane                  │
+│ Hauts-de-France         │
+│ Ile-de-France           │
+│ La Réunion              │
+│ Martinique              │
+│ Mayotte                 │
+│ Normandie               │
+│ Pays de la Loire        │
+└─────────────────────────┘
